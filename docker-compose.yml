@@ -1,7 +1,7 @@
 version: "3"
 services:
   coursematerial:
-    image: devopsdockeruh/coursepage
+    image: m1kkou/devops_with_docker_project
     ports:
       - 4000:80
     container_name: coursematerial
