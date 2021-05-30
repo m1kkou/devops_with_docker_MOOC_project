@@ -1,5 +1,3 @@
-ARG VERSION=10.15.3-alpine
-
 FROM jekyll/jekyll:3.8.3 as build-stage
 
 WORKDIR /tmp
@@ -16,7 +14,7 @@ RUN chown -R jekyll .
 
 RUN jekyll build
 
-FROM node:${VERSION}
+FROM node:alpine
 
 ENV PORT 80
 
