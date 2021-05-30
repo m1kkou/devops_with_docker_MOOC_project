@@ -14,7 +14,7 @@ RUN chown -R jekyll .
 
 RUN jekyll build
 
-FROM node:alpine
+FROM node:ubuntu
 
 ENV PORT 80
 
